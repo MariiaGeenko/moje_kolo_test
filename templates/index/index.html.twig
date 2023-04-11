@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row my-5">
+        <div class="col text-center">
+            <h1>{{ 'title'|trans }}</h1>
+            <span class="badge badge-warning">{{ 'company.name'|trans }}</span>
+        </div>
+    </div>
+
+    {% for form in forms %}
+        <a href="templates/form.html.twig"> FORM </a>
+    {% endfor %}
+
+    {% for position in positions %}
+        <a href="templates/base.html.twig"> TABLE DB </a>
+    {% endfor %}
+
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item">{{ date_time|date('d. m. Y') }}</li>
+                <li class="list-group-item">{{ date_time|date('H:i:s') }}</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
