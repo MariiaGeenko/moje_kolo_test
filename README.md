@@ -1,6 +1,6 @@
-this solution contains several options for implementation
+This solution contains several options for implementation
 
-Dependencies and database configured for the task
+dependencies and database configured for the task
 
 local database operation via sqlite is implemented
 
